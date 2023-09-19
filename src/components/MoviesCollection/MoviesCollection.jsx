@@ -7,7 +7,6 @@ import {
   Picture,
   Title,
 } from './MoviesCollection.styled';
-/* import defaultPicture from '../../images/default-image.jpg'; */
 
 const IMAGES_URL = 'https://image.tmdb.org/t/p/w500';
 

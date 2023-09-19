@@ -6,8 +6,7 @@ const Movies = lazy(() => import('../pages/Movies'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 const MovieDetails = lazy(() => import('../pages/MovieDetails'));
 const MovieCast = lazy(() => import('../components/MovieCast/MovieCast'));
-const MovieReviews = lazy(() =>
-  import('../components/MovieReviews/MovieReviews')
+const MovieReviews = lazy(() => import('../components/MovieReviews/MovieReviews')
 );
 
 export const App = () => {
