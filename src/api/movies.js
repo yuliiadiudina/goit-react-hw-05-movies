@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://api.themoviedb.org/3/';
+const BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = '6455853a1d19428276a493b9a96f5669';
 
 export async function fetchTrendMovies() {
@@ -8,7 +8,7 @@ export async function fetchTrendMovies() {
     api_key: API_KEY,
     language: 'en-US',
   };
-  const response = await axios.get(`${BASE_URL}trending/movie/day`, {
+  const response = await axios.get(`${BASE_URL}/trending/movie/day`, {
     params: params,
   });
   return response.data;
@@ -21,7 +21,7 @@ export async function fetchMovies({ abortCtrl, query }) {
     language: 'en-US',
     include_adult: false,
   };
-  const response = await axios.get(`${BASE_URL}search/movie`, {
+  const response = await axios.get(`${BASE_URL}/search/movie`, {
     signal: abortCtrl.signal,
     params: params,
   });
